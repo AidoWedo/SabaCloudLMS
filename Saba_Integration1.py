@@ -41,7 +41,7 @@ headers = {
     'Content-Type': 'application/json'
 }
 try:
-    r = requests.get('https://logrhythmsb-api.sabacloud.com/v1/offering', params=params)
+    r = requests.get('https://your_host_name.sabacloud.com/v1/offering', params=params)
     # access Json content
     print(r.url)
     jsonResponseclass = r.json()
