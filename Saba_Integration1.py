@@ -8,7 +8,7 @@ headers = {
     'password': 'Your_Password'
 }
 try:
-    response = requests.get("https://logrhythmsb-api.sabacloud.com/v1/login", headers=headers, data=payload)
+    response = requests.get("https://your_host_name.sabacloud.com/v1/login", headers=headers, data=payload)
     response.raise_for_status()
     # access Json content
     jsonResponse = response.json()
